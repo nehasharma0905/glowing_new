@@ -1,0 +1,21 @@
+.AfterBestSellerElement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  svg {
+    font-size: 60px;
+    color: #4e7661;
+    margin-bottom: 15px;
+  }
+  .text_1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  .text_2 {
+    font-size: 20px;
+    color: #7e7e7e;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,39 @@
+.AfterNewArrival {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .img1 {
+    position: relative;
+    padding: 20px;
+    .img1_text {
+      position: absolute;
+      padding: 30px 50px;
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .img2 {
+    position: relative;
+    padding: 20px;
+    .img2_text {
+      position: absolute;
+      padding: 30px 50px;
+      h1 {
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

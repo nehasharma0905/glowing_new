@@ -1,0 +1,12 @@
+.Item {
+  .ItemBox {
+    display: flex;
+    flex-direction: row;
+    .itemimage {
+      width: 50%;
+    }
+    .itemdescription {
+      width: 50%;
+    }
+  }
+}

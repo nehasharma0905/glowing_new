@@ -1,0 +1,36 @@
+.Navigation-bar {
+  .free-shipping-text {
+    background-color: #4e7660;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .Navigation {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .Navigation-items {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .glowing {
+      align-self: center;
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
+}

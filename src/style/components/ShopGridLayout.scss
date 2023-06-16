@@ -1,0 +1,45 @@
+.ShopGridLayout {
+  display: flex;
+  flex-direction: row;
+  .Options {
+    width: 20%;
+    height: 100%;
+    padding: 50px;
+    .search_section {
+      height: 25px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    input {
+      height: 100%;
+      width: 80%;
+      margin-right: 3px;
+    }
+    button {
+      height: 100%;
+      width: 15%;
+    }
+    .categories {
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-size: 16px;
+          font-weight: 500;
+          color: #7e7e7e;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 70px;
+  }
+}
