@@ -4,7 +4,8 @@ const Item = (props) => {
   return (
     <div className="Item">
       <div>
-        <ShopLayout />
+        {/* <ShopLayout /> */}
+        ABC
       </div>
       <div className="ItemBox">
         <div className="itemimage"></div>
