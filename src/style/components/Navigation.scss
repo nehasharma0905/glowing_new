@@ -26,6 +26,9 @@
       gap: 50px;
       font-size: 18px;
       font-weight: 400;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .glowing {
       align-self: center;

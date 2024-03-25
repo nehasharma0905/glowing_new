@@ -10,7 +10,7 @@ const ShopSection = (props) => {
         para="Our products are designed for everyone."
       />
       <div className="ShopSectionBoxes">
-        {homeData.shoppingCat.map((el, ind) => (
+        {homeData.shoppingCart.map((el, ind) => (
           <ImageWithButton key={ind} title={el.title} imgUrl={el.imgUrl} />
         ))}
       </div>

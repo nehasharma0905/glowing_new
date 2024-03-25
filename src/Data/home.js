@@ -40,7 +40,7 @@ export const homeData = {
       imgUrl: heroSlider5,
     },
   ],
-  shoppingCat: [
+  shoppingCart: [
     {
       title: "Skincare",
       imgUrl: banner18,
