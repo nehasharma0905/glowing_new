@@ -1,17 +1,21 @@
 import Button from "../Elements/Button";
+import { homeData } from "../Data/home";
 const AfterNewArrival = () => {
   return (
     <div className="AfterNewArrival">
       <div className="img1">
         <div className="img1_text">
-          <p>NEW COLLECTION</p>
+          <p>{homeData.newArrival[0].tagline}</p>
           <h1>
             Mountain Pine <br />
             Bath Oil
           </h1>
-          <Button className="image_button" button="Explore More" />
+          <Button
+            className="image_button"
+            button={homeData.newArrival[0].buttonText}
+          />
         </div>
-        <img src="https://templates.g5plus.net/glowing/images/banner-21.jpg" />
+        <img src={homeData.newArrival[0].imgUrl} />
       </div>
       <div className="img2">
         <div className="img2_text">
@@ -20,9 +24,12 @@ const AfterNewArrival = () => {
             Makeup with extended range in
             <br /> colors for every human.
           </p>
-          <Button className="image_button" button="Shop Sale" />
+          <Button
+            className="image_button"
+            button={homeData.newArrival[1].buttonText}
+          />
         </div>
-        <img src="https://templates.g5plus.net/glowing/images/banner-22.jpg" />
+        <img src={homeData.newArrival[1].imgUrl} />
       </div>
     </div>
   );

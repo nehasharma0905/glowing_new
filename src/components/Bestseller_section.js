@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 import HeadingTexts from "./Texts";
-import data from "./../Data/products.json";
+import { products } from "./../Data/products";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -28,7 +28,7 @@ const BestsellerSection = () => {
             },
           }}
         >
-          {data.products.slice(0, 6).map((el, ind) => (
+          {products.slice(0, 6).map((el, ind) => (
             <ProductCard key={ind} {...el} />
           ))}
         </AliceCarousel>

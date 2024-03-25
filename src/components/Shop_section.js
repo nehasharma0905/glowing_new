@@ -1,4 +1,4 @@
-import data from "./../Data/home.json";
+import { homeData } from "./../Data/home.js";
 import ImageWithButton from "./ImageWithButton";
 import HeadingTexts from "./Texts";
 
@@ -10,7 +10,7 @@ const ShopSection = (props) => {
         para="Our products are designed for everyone."
       />
       <div className="ShopSectionBoxes">
-        {data.shoppingCat.map((el, ind) => (
+        {homeData.shoppingCat.map((el, ind) => (
           <ImageWithButton key={ind} title={el.title} imgUrl={el.imgUrl} />
         ))}
       </div>

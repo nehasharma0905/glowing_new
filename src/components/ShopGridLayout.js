@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import data from "../Data/products.json";
+import { products } from "../Data/products";
 import ProductCard from "./ProductCard";
 import { AiFillStar } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -18,7 +18,7 @@ const ShopGridLayout = () => {
   // When we define state we have to give an initial value
 
   useEffect(() => {
-    setProductArray(data.products);
+    setProductArray(products);
   }, []);
 
   return (
