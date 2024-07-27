@@ -1,5 +1,5 @@
 import { AiOutlineUser } from "react-icons/ai";
-import { AiOutlineStar } from "react-icons/ai";
+import { FiHeart } from "react-icons/fi";
 import { FiShoppingBag } from "react-icons/fi";
 import Authentication from "../pages/Authentication";
 import { useState } from "react";
@@ -29,7 +29,7 @@ const Nav = () => {
             <AiOutlineUser />
           </li>
           <li>
-            <AiOutlineStar />
+            <FiHeart />
           </li>
           <li>$0.00</li>
           <li>
