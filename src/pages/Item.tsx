@@ -18,7 +18,7 @@ import { useState } from "react";
 
 import paymentMethod from "./../assets/images/paymentMethods.png";
 
-const Item = (props) => {
+const Item = () => {
   const [lineWidth, setLineWidth] = useState(10);
   const [quantity, setQuantity] = useState(1);
   const [image, setImage] = useState(imgTest1);
