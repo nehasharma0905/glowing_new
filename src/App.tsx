@@ -7,7 +7,9 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Nav from "./components/Navigation";
 
+
 function App() {
+
   return (
     <div className="App">
       <Nav />
@@ -18,7 +20,7 @@ function App() {
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

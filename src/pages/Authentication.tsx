@@ -1,16 +1,15 @@
 import Modal from "@mui/material/Modal";
-import { useState } from "react";
-import { IoMdClose } from "react-icons/io";
-import { FcGoogle } from "react-icons/fc";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 import {
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
   GoogleAuthProvider,
+  signInWithEmailAndPassword,
   signInWithPopup,
-  signOut,
+  signOut
 } from "firebase/auth";
+import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import { IoMdClose } from "react-icons/io";
 import { auth } from "../Firebase";
 const Authentication = (props) => {
   const [status, setStatus] = useState("Sign-in");

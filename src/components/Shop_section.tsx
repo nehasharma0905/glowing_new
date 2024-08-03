@@ -1,4 +1,4 @@
-import { homeData } from "./../Data/home.js";
+import { homeData } from "../Data/home";
 import ImageWithButton from "./ImageWithButton";
 import HeadingTexts from "./Texts";
 

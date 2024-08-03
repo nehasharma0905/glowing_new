@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 import HeadingTexts from "./Texts";
-import { products } from "./../Data/products";
+import {products} from "./../Data/products";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 

@@ -1,15 +1,16 @@
 .ImageWithButton {
-  img {
-    width: 100%;
-    height: 100%;
-  }
   background-repeat: no-repeat;
   display: flex;
   align-items: end;
   justify-content: center;
-  background-size: contain;
-  position: relative;
-
+  & {
+    background-size: contain; // Wrap this declaration in &
+    position: relative;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
   .image_button {
     position: absolute;
     margin-bottom: 20px;
