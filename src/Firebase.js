@@ -1,14 +1,9 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
 
 import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
+  getAuth
 } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -16,18 +11,16 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyApHgvPxSFl9P0kk4DBUpTPdFNtK4A2A7s",
-  authDomain: "learning-projects-3bd1a.firebaseapp.com",
-  projectId: "learning-projects-3bd1a",
-  storageBucket: "learning-projects-3bd1a.appspot.com",
-  messagingSenderId: "48424665193",
-  appId: "1:48424665193:web:01f16a02016a62b7ef22f8",
-  measurementId: "G-JEWLWJCKHD",
+  apiKey: "AIzaSyDkiIHxOW_zvURkWu7IUD725-UxD4Wf1A0",
+  authDomain: "glowing-react-2024.firebaseapp.com",
+  projectId: "glowing-react-2024",
+  storageBucket: "glowing-react-2024.appspot.com",
+  messagingSenderId: "646957267929",
+  appId: "1:646957267929:web:7bd852f5b5e1a82faef7c8"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 
 // Authenticaion Functions
