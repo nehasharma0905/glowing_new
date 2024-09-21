@@ -1,0 +1,72 @@
+.WishlistItem {
+  padding: 10px 15px;
+
+  .WishlistItemContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    justify-content: space-between;
+    border: solid 1px #f8f8f8;
+    .WishlistItemDetails {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      .WishlistItemImg {
+        height: 110px;
+        width: auto;
+      }
+      svg {
+        font-size: 18px;
+        color: #7e7e7e;
+        cursor: pointer;
+        &:hover {
+          color: black;
+        }
+      }
+      .WishlistItemText {
+        .WishlistItemTitle {
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .price {
+          font-size: 15px;
+          color: #7e7e7e;
+          font-weight: 500;
+          text-decoration: line-through;
+        }
+        .discountPrice {
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+    }
+    .WishlistItemButton {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      .inStock {
+        color: #7e7e7e;
+        font-size: 15px;
+      }
+      .addToCart {
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: white;
+        padding: 10px 30px;
+        border: 2px solid #e2dfdf;
+        border-radius: 3px;
+        &:hover {
+          color: white;
+          background-color: black;
+          border: 2px solid black;
+        }
+      }
+    }
+  }
+}

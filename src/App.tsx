@@ -6,10 +6,10 @@ import Item from "./pages/Item";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Nav from "./components/Navigation";
-
+import Wishlist from "./pages/Wishlist";
+import ShoppingCart from "./pages/ShoppingCart";
 
 function App() {
-
   return (
     <div className="App">
       <Nav />
@@ -17,10 +17,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Product />} />
         <Route path="item" element={<Item />} />
+        <Route path="wishlist" element={<Wishlist />} />
+        <Route path="shoppingCart" element={<ShoppingCart />} />
       </Routes>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
