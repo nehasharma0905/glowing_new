@@ -3,11 +3,19 @@ import { AiOutlineStar } from "react-icons/ai";
 import { FiShoppingBag } from "react-icons/fi";
 import Authentication from "../pages/Authentication";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const navigate = useNavigate();
+  const handleOpenHome = () => {
+    navigate("/");
+  };
+  const handleOpenProducts = () => {
+    navigate("/products");
+  };
 
   return (
     <div className="Navigation-bar">
@@ -17,8 +25,8 @@ const Nav = () => {
       </p>
       <div className="Navigation">
         <ul className="Navigation-items">
-          <li>Home</li>
-          <li>Products</li>
+          <li onClick={handleOpenHome}>Home</li>
+          <li onClick={handleOpenProducts}>Products</li>
           <li>Stores</li>
           <li>Contact us</li>
         </ul>

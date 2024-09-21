@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import AfterShopLayout from "../components/AfterShopLayout";
 import ShopGridLayout from "../components/ShopGridLayout";
 import ShopLayout from "../components/ShopLayout";
-import { searchProductsApi } from "../api/searchProductsApi";
+import { getAllProductsApi } from "../api/productsApi";
 
 function Product() {
   useEffect(() => {
-    searchProductsApi();
+    getAllProductsApi();
   }, []);
   return (
     <div>

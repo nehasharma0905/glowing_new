@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
 const ProductCard = (props) => {
+  const navigate = useNavigate();
+  const handleOpenItem = () => {
+    navigate("/item");
+  };
   return (
-    <div className="ProductCard">
+    <div className="ProductCard" onClick={handleOpenItem}>
       <img src={props.imgUrl} />
 
       <p className="price">

@@ -14,7 +14,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import img from "../assets/images/instagram-02.jpg";
 
 import paymentMethod from "./../assets/images/paymentMethods.png";
@@ -22,6 +22,7 @@ import productImg1 from "./../assets/images/product-info-3-1.png";
 import productImg2 from "./../assets/images/product-info-3-2.png";
 import productImg3 from "./../assets/images/product-info-3-3.png";
 import productImg4 from "./../assets/images/product-info-3-4.png";
+import { getItemApi } from "../api/productsApi";
 
 const Item = () => {
   const [lineWidth, setLineWidth] = useState(10);
@@ -44,6 +45,9 @@ const Item = () => {
       setLineWidth(lineWidth + 10);
     }
   };
+  useEffect(() => {
+    getItemApi();
+  }, []);
   return (
     <>
       <div className="Item">
