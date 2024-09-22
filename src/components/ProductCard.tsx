@@ -1,24 +1,25 @@
 import { useNavigate } from "react-router-dom";
-const ProductCard = (props) => {
+import { TSearchProductItem } from "../redux/product/product.type";
+const ProductCard = (props: TSearchProductItem) => {
   const navigate = useNavigate();
   const handleOpenItem = () => {
     navigate("/item");
   };
   return (
     <div className="ProductCard" onClick={handleOpenItem}>
-      <img src={props.imgUrl} />
+      <img src={props.image} />
 
       <p className="price">
-        {props.discount > 0 ? (
+        {/* {props.discount > 0 ? (
           <span>
             {" "}
             ${Math.round(props.price * (100 + props.discount).toFixed(2)) / 100}
           </span>
-        ) : null}
+        ) : null} */}
         ${props.price}
       </p>
-      <p className="title">{props.title}</p>
-      <p className="rating">Rating: {props.star}</p>
+      <p className="title">{props.name}</p>
+      <p className="rating">Rating: {props.rating}</p>
     </div>
   );
 };

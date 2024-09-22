@@ -2,11 +2,13 @@ import { useEffect } from "react";
 import AfterShopLayout from "../components/AfterShopLayout";
 import ShopGridLayout from "../components/ShopGridLayout";
 import ShopLayout from "../components/ShopLayout";
-import { getAllProductsApi } from "../api/productsApi";
+import { useAppDispatch } from "../redux/store";
+import { getAllProductsThunk } from "../redux/product/product.thunk";
 
 function Product() {
+  const dispatch = useAppDispatch();
   useEffect(() => {
-    getAllProductsApi();
+    dispatch(getAllProductsThunk());
   }, []);
   return (
     <div>

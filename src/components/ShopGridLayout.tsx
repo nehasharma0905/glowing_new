@@ -3,8 +3,9 @@ import { products } from "../Data/products";
 import ProductCard from "./ProductCard";
 import { AiFillStar } from "react-icons/ai";
 import { AiOutlineSearch } from "react-icons/ai";
+import { useAppSelector } from "../redux/store";
 const ShopGridLayout = () => {
-  const [productArray, setProductArray] = useState([]);
+  const { allProducts } = useAppSelector((state) => state.product);
 
   // declare -> const [variableName, functionName] = useState(initialState)
 
@@ -16,10 +17,6 @@ const ShopGridLayout = () => {
   // right way of updating state variable is setVariable(10) -> now variable will have 10 as it's value
 
   // When we define state we have to give an initial value
-
-  useEffect(() => {
-    setProductArray(products);
-  }, []);
 
   return (
     <div className="ShopGridLayout">
@@ -54,7 +51,7 @@ const ShopGridLayout = () => {
         </div>
       </div>
       <div className="products">
-        {productArray.map((el, ind) => (
+        {allProducts.data.map((el, ind) => (
           <ProductCard key={ind} {...el} />
         ))}
       </div>

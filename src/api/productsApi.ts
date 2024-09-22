@@ -2,7 +2,7 @@ import { getInstance } from "./mainInstance";
 
 export const getAllProductsApi = async () => {
   const instance = await getInstance();
-  return instance.get("/products/get-all-products/1");
+  return instance.get("/products/get-all-products");
 };
 
 export const getItemApi = async () => {
